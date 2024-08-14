@@ -1,4 +1,4 @@
-const key = "116d59cdef7ee452ede486b9740ddbc7";
+const apikey = ".......";
 
 function DadosNaTela(dados){
     document.querySelector(".city").innerHTML = "Tempo em " + dados.name;
@@ -9,7 +9,7 @@ function DadosNaTela(dados){
 }
 
 async function BuscarCidade(cidade) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${key}&lang=pt_br&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apikey}&lang=pt_br&units=metric`;
     const resposta = await fetch(url);
     const dados = await resposta.json();
     console.log(dados);
