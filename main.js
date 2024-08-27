@@ -1,4 +1,4 @@
-const apikey = ".......";
+const apikey = "116d59cdef7ee452ede486b9740ddbc7";
 
 function DadosNaTela(dados){
     document.querySelector(".city").innerHTML = "Tempo em " + dados.name;
